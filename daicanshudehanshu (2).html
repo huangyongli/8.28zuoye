@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="box">
+    <form action="">
+        用户名:<input type="text" id="userName" value="">
+        <br/>
+        年　龄:<input type="text" id="age" value="">
+    </form>
+</div>
+<script>
+   var user = prompt("请输入您的用户名");
+   var age = prompt("请输入您的年龄");
+   function getUserInfo(a,b) {
+       var userName = document.getElementById("userName");
+       var userAge = document.getElementById("age");
+        userName.value = a;
+        userAge.value = b;
+   }
+   getUserInfo(user,age);
+</script>
+</body>
+</html>
